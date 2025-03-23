@@ -1,0 +1,78 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore datasets (if not needed in the image)
+data/raw/
+data/processed/
+
+# Ignore fine-tuned models (if not needed in the image)
+models/
+
+# Ignore Docker build artifacts
+docker-compose.yml
+*.dockerfile
+
+# Ignore Kubernetes temporary files
+*.yaml.bak
+*.yaml.tmp
+
+# Ignore Streamlit cache and config
+.streamlit/
+__pycache__/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python package/build files
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore local environment variables
+.env
+.env.local
+
+# Ignore training checkpoints (if applicable)
+checkpoints/
+*.ckpt
+
+# Ignore Hugging Face cache (if applicable)
+.cache/
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore large files (e.g., datasets, models)
+*.zip
+*.tar.gz
+*.h5
+*.pt
+*.bin

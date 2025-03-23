@@ -1,0 +1,6 @@
+transformers==4.50.0
+datasets==3.4.1
+accelerate==1.5.2
+torch==2.6.0
+streamlit==1.43.2
+scikit-learn==1.6.1

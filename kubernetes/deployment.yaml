@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ner-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ner-app
+  template:
+    metadata:
+      labels:
+        app: ner-app
+    spec:
+      containers:
+      - name: ner-app
+        image: ner-app:latest
+        ports:
+        - containerPort: 8501
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
